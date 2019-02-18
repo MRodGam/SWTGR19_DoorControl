@@ -47,7 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DoorControl_Test_Unit.cs" />
+    <Compile Include="Mocks\MockAlarm.cs" />
+    <Compile Include="Mocks\MockDoor.cs" />
+    <Compile Include="Mocks\MockEntryNotification.cs" />
+    <Compile Include="Mocks\MockUserValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
