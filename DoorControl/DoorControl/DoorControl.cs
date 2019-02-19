@@ -14,8 +14,8 @@ namespace DoorControl
         public IUserValidation _userValidation;
         public IAlarm _alarm;
 
-        public bool IsDoorOpen { get; private set; } = false;
-        public bool IsDoorBreached { get; private set; } = false;
+        public bool IsDoorOpen { get; set; } = false;
+        public bool IsDoorBreached { get; set; } = false;
 
         // private State _doorState;
 
