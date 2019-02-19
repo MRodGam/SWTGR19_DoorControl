@@ -12,6 +12,7 @@ namespace DoorControl.Test.Unit
         
         public bool ValidateEntryRequest(int ID)
         {
+            
             WasRequestValidated = true;
             return WasRequestValidated;
         }

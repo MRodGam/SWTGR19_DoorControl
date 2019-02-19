@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DoorControl_Test_Unit.cs" />
+    <Compile Include="DoorControl_Test_Unit_NSub.cs" />
     <Compile Include="Mocks\MockAlarm.cs" />
     <Compile Include="Mocks\MockDoor.cs" />
     <Compile Include="Mocks\MockEntryNotification.cs" />
