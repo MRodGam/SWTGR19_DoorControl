@@ -13,10 +13,10 @@ namespace DoorControl.Test.Unit
     class DoorControl_Test_Unit
     {
         private DoorControl _uut;
-        public IDoor _door;
-        private IUserValidation _userValidation;
-        private IEntryNotification _entryNotification;
-        private IAlarm _alarm;
+        public MockDoor _door;
+        private MockUserValidation _userValidation;
+        private MockEntryNotification _entryNotification;
+        private MockAlarm _alarm;
 
         [SetUp]
         public void SetUp()
@@ -29,11 +29,11 @@ namespace DoorControl.Test.Unit
             _uut = new DoorControl(_door, _userValidation,_entryNotification,_alarm );
         }
 
-        //[Test]
-        //public void RequestEntryCalled_ExpectedTrue()
-        //{
-        //    _uut.RequestEntry(1);
-        //    Assert.That(_userValidation.WasRequestCalled == true);
-        //}
+        [Test]
+        public void RequestEntryCalled_ExpectedTrue()
+        {
+            _uut.RequestEntry(1);
+            Assert.IsTrue(_userValidation.WasRequestValidated);
+        }
     }
 }

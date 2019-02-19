@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DoorControl
 {
     public class DoorControl
@@ -15,6 +16,8 @@ namespace DoorControl
 
         public bool IsDoorOpen { get; private set; } = false;
         public bool IsDoorBreached { get; private set; } = false;
+
+        // private State _doorState;
 
         public DoorControl (IDoor door, IUserValidation userValidation, IEntryNotification entryNotification, IAlarm alarm)
         {
