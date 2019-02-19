@@ -45,5 +45,12 @@ namespace DoorControl.Test.Unit
             _uut.DoorOpen();
             _alarm.Received(1).Equals(true);
         }
+
+        [Test]
+        public void CheckIfValidated_ExpectedFalse()
+        {
+            _uut.RequestEntry(432);
+            _userValidation.DidNotReceive().ValidateEntryRequest(876);
+        }
     }
 }
